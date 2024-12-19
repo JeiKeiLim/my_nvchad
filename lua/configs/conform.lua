@@ -1,8 +1,14 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
+    python = { "black" },
+    go = { "gofmt", "gofumpt" },
+    markdown = { "prettier" },
+    c = { "clang-format" },
+    cpp = { "clang-format" },
+    cmake = { "cmake_format" },
   },
 
   -- format_on_save = {
